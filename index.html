@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Stat Tracker</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="/Project-1-Group-5/assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css" />
 </head>
-
-<style>
-    img {
-        height: 250px;
-        width: 400px;
-    }
-</style>
 
 <body>
     <div class="container">
@@ -24,52 +19,86 @@
                     Awesome Stat Tracker
                 </figure>
                 <figure class="text-center">
-                   Type in your username and select the games you want to compare!  
+                    Type in your username and select the games you want to compare!
                 </figure>
             </div>
         </div>
-    <aside>
-        <p>
-            Type in your username and select 2 games below to compare.
-        </p>
-
-        <input type="text">
-        <button>Search</button>
-
         <br>
-        <br>
-
-        <div class="dropDown">
-            <button class="dropButton">Select Game</button>
-            <div class="dropDown-content">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
+        <aside class="row">
+            <div class="col-3"></div>
+            <div class="col-3">
+                <p class="text-center">
+                    Type in your username and select 2 games below to compare.
+                </p>
             </div>
-        </div>
-        <br>
-        <div class="dropDown">
-            <button class="dropButton">Select Game</button>
-            <div class="dropDown-content">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
+            <div class="col-3 justify-content-center">
+                <input id="username-text" class="username-input" type="text" placeholder="Username!">
+                <button id="btn">Search</button>
             </div>
-        </div>
-    </aside>
 
-    <div class="row">
-        <div class="col text-end">
-            <div class="displayResults">
-                   Results displayed here
+
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-3">
+                    <div class="dropDown">
+                        <label for="games">Choose your Console:</label>
+                        <select name="games" id="games">
+                            <optgroup label="COD: Warzone">
+                                <option value="ps4">COD:PS4</option>
+                                <option value="pc">COD:PC</option>
+                                <option value="xbox">COD:XBOX</option>
+                            </optgroup>
+                            <optgroup label="APEX">
+                                <option value="ps4">APEX:PS4</option>
+                                <option value="pc">APEX:PC</option>
+                                <option value="xbox">APEX:XBOX</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="dropDown">
+                        <label for="games">Choose your Console:</label>
+                        <select name="games" id="games">
+                            <optgroup label="COD: Warzone">
+                                <option value="ps4">COD:PS4</option>
+                                <option value="pc">COD:PC</option>
+                                <option value="xbox">COD:XBOX</option>
+                            </optgroup>
+                            <optgroup label="APEX">
+                                <option value="ps4">APEX:PS4</option>
+                                <option value="pc">APEX:PC</option>
+                                <option value="xbox">APEX:XBOX</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <div class="displayResults">
+                    Results displayed here:
+                    <br>
+                    <br>
+                    <section class="displayPictures ">
+                        <img src="https://blog.activision.com/content/dam/atvi/activision/atvi-touchui/blog/callofduty/feature/AGB_WZ_0309_TOUT.jpg"
+                            alt="Call of Duty: Warzone" class="hide">
+                        <img src="https://thumbs.dreamstime.com/b/apex-legends-logo-illustration-video-game-along-its-name-144082430.jpg"
+                            alt="Other Game we haven't decided on yet" class="hide">
+                    </section>
+                </div>
             </div>
         </div>
     </div>
 
-    <aside class="displayPictures">
-        <img src="https://blog.activision.com/content/dam/atvi/activision/atvi-touchui/blog/callofduty/feature/AGB_WZ_0309_TOUT.jpg" alt="Call of Duty: Warzone" class="hide">
-        <img src="#" alt="Other Game we haven't decided on yet" class="hide">
-    </aside>
-    </div>
 </body>
+
 </html>
