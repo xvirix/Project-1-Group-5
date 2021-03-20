@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Stat Tracker</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="public/styles.css">
     </head>
-
-<style>
-    img {
-        height: 350px;
-        width: 400px;
-    }
-</style>
 
 <body>
     <div class="container">
@@ -24,26 +19,25 @@
                     Awesome Stat Tracker
                 </figure>
                 <figure class="text-center">
-                   Type in your username and select the games you want to compare!  
+                    Type in your username and select the games you want to compare!
                 </figure>
             </div>
         </div>
         <br>
-    <aside class="row">
-        <div class="col-3"></div>
-        <div class="col-3">
-            <p class="text-center">
-                Type in your username and select 2 games below to compare.
-            </p>
-        </div>
-        <div class="col-3 justify-content-center">
-            <input type="text">
-            <button>Search</button>
-        </div>
-                
-
-        <br>
-        <br>
+        <aside class="row">
+            <div class="col-3"></div>
+            <div class="col-3">
+                <p class="text-center">
+                    Type in your username and select 2 games below to compare.
+                </p>
+            </div>
+            <div class="col-3 justify-content-center">
+                <input id="username-text" class="username-input" type="text" placeholder="Username!">
+                <button id="btn">Search</button>
+            </div>
+            <br>
+            <br>
+            <div class="row">
         <div class="row">
             <div class="col-3"></div>
             <div class="col-3">
@@ -97,10 +91,12 @@
                     <img src="https://blog.activision.com/content/dam/atvi/activision/atvi-touchui/blog/callofduty/feature/AGB_WZ_0309_TOUT.jpg" alt="Call of Duty: Warzone" class="hide">
                     <img src="https://thumbs.dreamstime.com/b/apex-legends-logo-illustration-video-game-along-its-name-144082430.jpg" alt="Other Game we haven't decided on yet" class="hide">
                    </section>
+
                 </div>
             </div>
         </div>
     </div>
 
 </body>
+
 </html>
