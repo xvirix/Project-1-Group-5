@@ -29,9 +29,9 @@ $(document).ready(function () {
 		var usernameType = $(this).serializeArray();
 		var username = usernameType[0].value;
 		var displayUser = $('<div class="displayResults">');
-		console.log(username)
-		displayUser.text(username)
-		displayContainer.append(displayUser)
+		console.log(username);
+		displayUser.text(username);
+		displayContainer.append(displayUser);
 	});
 	// Have not inserted into main function because I cant get authorization 
 	function getUserStats(username) {
@@ -40,8 +40,22 @@ $(document).ready(function () {
 			return response.json();
 		}).then(function (global) {
 			var username = global.name
-			var usernameDiv = $("<div class='user-name")
-			usernameDiv.append(username)
+			var usernameDiv = $("<div class='user-name");
+			usernameDiv.append(username);
 		});
 	};
 });
+
+
+// Changes the background every 5 seconds.
+function changeImage() {
+	var BackgroundImg = [
+		"./assets/1.jpg",
+		"./assets/2.jpg",
+		"./assets/3.jpg",
+		"./assets/4.jpg"
+	];
+	var i = Math.floor((Math.random() * 4));
+	document.body.style.backgroundImage = 'url("' + BackgroundImg[i] + '")';
+}
+setInterval(changeImage, 5000);
