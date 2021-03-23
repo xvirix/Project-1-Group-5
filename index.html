@@ -10,84 +10,85 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
-    <!-- <link rel="stylesheet" href="public/styles.css"> -->
+    <link rel="stylesheet" href="public/styles.css" />
 </head>
 
 
-<header>
-    <div class="row justify-content-center">
-        <div class="col">
-            <figure class="h1 text-center">
-                Awesome Stat Tracker
-            </figure>
-            <figure class="text-center">
-                Type in your username and select the games you want to compare!
-            </figure>
-        </div>
-    </div>
-</header>
-<br>
+
 
 <body>
-    <div class="container">
-        <aside class="row">
-            <div class="col-3"></div>
-            <div class="col-3">
-                <p class="text-center">
-                    Type in your username and select 2 games below to compare.
-                </p>
-            </div>
-            <div class="col-3 justify-content-center">
-                <form id="search-bar">
-                    <input name="username" class="username-text" type="text" placeholder="Username!">
-                    <button id="btn">Search</button>
-                </form>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-3">
-                        <div class="dropDown">
-                            <label for="games">Choose your Console:</label>
-                            <select name="games" label="games">
-                                <optgroup id="COD: Warzone">
-                                    <option value="ps4">COD:PS4</option>
-                                    <option value="pc">COD:PC</option>
-                                    <option value="xbox">COD:XBOX</option>
-                                </optgroup>
-                                <optgroup label="APEX">
-                                    <option value="ps4">APEX:PS4</option>
-                                    <option value="pc">APEX:PC</option>
-                                    <option value="xbox">APEX:XBOX</option>
-                                </optgroup>
-                            </select>
+    <nav>
+        <div class="row justify-content-center">
+            <div class="col">
+                <figure class="h1 text-center">
+                    Awesome Stat Tracker
+                </figure>
+                <figure class="text-center">
+                    Type in your username and select the games you want to compare!
+                </figure>
+                <div class="container">
+                    <aside class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3">
+                            <p class="text-center">
+                                Type in your username and select 2 games below to compare.
+                            </p>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="dropDown">
-                            <label for="games">Choose your Console:</label>
-                            <select name="games" id="games">
-                                <optgroup label="COD: Warzone">
-                                    <option value="ps4">COD:PS4</option>
-                                    <option value="pc">COD:PC</option>
-                                    <option value="xbox">COD:XBOX</option>
-                                </optgroup>
-                                <optgroup label="APEX">
-                                    <option value="ps4">APEX:PS4</option>
-                                    <option value="pc">APEX:PC</option>
-                                    <option value="xbox">APEX:XBOX</option>
-                                </optgroup>
-                            </select>
+                        <div class="col-3 justify-content-center">
+                            <form id="search-bar">
+                                <input name="username" class="username-text" type="text" placeholder="Username!">
+                                <button id="btn">Search</button>
+                            </form>
                         </div>
-                    </div>
+                        <br>
+                        <br>
+                        <div class="row"></div>
+                            <div class="row">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="dropDown">
+                                        <label for="games">Choose your Console:</label>
+                                        <select name="games" name="label">
+                                            <optgroup label="COD-Warzone">
+                                                <option value="ps4">COD:PS4</option>
+                                                <option value="pc">COD:PC</option>
+                                                <option value="xbox">COD:XBOX</option>
+                                            </optgroup>
+                                            <optgroup label="APEX">
+                                                <option value="ps4">APEX:PS4</option>
+                                                <option value="pc">APEX:PC</option>
+                                                <option value="xbox">APEX:XBOX</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="dropDown">
+                                        <label for="games">Choose your Console:</label>
+                                        <select name="games" id="games">
+                                            <optgroup label="COD: Warzone">
+                                                <option value="ps4">COD:PS4</option>
+                                                <option value="pc">COD:PC</option>
+                                                <option value="xbox">COD:XBOX</option>
+                                            </optgroup>
+                                            <optgroup label="APEX">
+                                                <option value="ps4">APEX:PS4</option>
+                                                <option value="pc">APEX:PC</option>
+                                                <option value="xbox">APEX:XBOX</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                    </aside>
                 </div>
-        </aside>
-        <br>
-        <br>
-        <br>
-    </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="container">
         <div class="row">
             <div class="col text-center">
